@@ -762,11 +762,17 @@ input:checked + .checkbox > .checkbox-text {
     
 
 }
+.header-tablet{
+    display: none;
+}
 
 @media  screen and (min-width: 768px) and (max-width:1157px) {
     .container{
         max-width: 1157px;
     }
+    .header-tablet{
+    display: flex;
+}
     .container-hero{
         width: 100%;
     }
@@ -826,5 +832,21 @@ color: #434455;
     
     border-radius: 2px;
     background-color: #404bbf;
+}
+.hero{
+    max-width: 1158px;
+    padding: 112px 136px;
+    height: 436px;
+}
+.hero-title{
+    display: block;
+    font-weight: 700;
+font-size: 56px;
+line-height: 1.07143;
+letter-spacing: 0.02em;
+align-items: center;
+color: #fff;
+margin: 0 auto 36px;
+width: 496px;
 }
 }
