@@ -35,31 +35,7 @@ a{
     border: none;
     background-color: transparent;
 }
-.navigation{
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0;
-    display: block;
-    position: relative;
-    
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-studio{
-    color: #404bbf;
-}
-.header-studio::after{
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    
-    border-radius: 2px;
-    background-color: #404bbf;
-}
+
 .navigation:hover,
 .navigation:focus{
     color: #404bbf;
@@ -73,12 +49,12 @@ a{
     transform: translate(-50%);
     width: 100%;
     min-height: 100%;
-    opacity: 0.4;
-    background: #2E2F42;
+    
+    background: #fff;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    display: none;
     
 }
 .menu-mob-box{
@@ -196,14 +172,16 @@ margin: auto 52px 72px 52px ;
 }
 .container-hero{
     display:flex;
-    max-width: 767px;
+    
         justify-content: space-between;
     align-items: center;
     height: 56px;
     max-width: 767px;
 
 }
-
+.head-title-adress{
+    display: none;
+}
 .hero-button:hover,
 .hero-button:focus{
     background-color: #404bbf;
@@ -519,18 +497,12 @@ img{
     padding: 96px 15px;
     align-items: center;
 }
-.head-nav{
 
-}
 .head-nav-menu{
-    display: flex;
-    gap: 40px;
+    display: none;
     
 }
-.head-list-adress{
-    display: flex;
-    gap: 40px;
-}
+
 
 
 .icon-bckg{
@@ -624,6 +596,7 @@ ul, ol{
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    display: none;
 }
     
 .modal-close-btn {
@@ -790,27 +763,68 @@ input:checked + .checkbox > .checkbox-text {
 
 }
 
-/* @media screen and (min-width: 900px) {
-  .hero {
-        background-color: #2E2F42;
-    padding: 188px 0;
-    max-width: 1440px;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/people-office-bckg.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-margin: 0 auto;
+@media  screen and (min-width: 768px) and (max-width:1157px) {
+    .container{
+        max-width: 1157px;
+    }
+    .container-hero{
+        width: 100%;
+    }
+    .head-icon-box{
+        display: none;
+    }
+    .logo-head{
+        display: none;
+    }
+    .head-title-adress{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1157px;
+    }
+    .head-nav-menu{
+        display: flex;
+        gap:40px
+    }
+    .head-nav{
+        display: flex;
+    }
+    .head-list-adress{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .adress-contact{
+font-weight: 400;
+font-size: 12px;
+
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #434455;
 }
-  } */
-   /* Iphone 5s */
-@media screen and (min-width: 320px){
-
+.navigation{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+    position: relative;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Mobile
-@media screen and (min-width: 378px){
-
-} */
-/* tablet */
-@media screen and (min-width: 768px) and (max-width:1439px){
-
+.header-studio{
+    color: #404bbf;
+}
+.header-studio::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    height: 4px;
+    
+    border-radius: 2px;
+    background-color: #404bbf;
+}
 }
