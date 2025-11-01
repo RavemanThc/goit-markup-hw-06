@@ -30,7 +30,7 @@
           >Web<span class="header-logo-studio">Studio</span></a
         >
         <div class="head-icon-box">
-          <button type="button" class="head-menu-bttn">
+          <button type="button" class="head-menu-bttn" data-menu-open>
             <svg class="head-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -71,13 +71,14 @@
 
     <main>
       <section id="heroimage" class="hero">
-        <div class="container">
+        <div class="container hero-title-div">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button
             type="button"
             id="hero-button"
             value="Order Service"
             class="hero-button"
+            data-modal-open
           >
             Order Service
           </button>
@@ -138,21 +139,39 @@
           </ul>
         </div>
       </section>
-      <section id="section2">
+      <section id="section2" class="cast-section">
         <div class="container cast">
           <h2 class="cast-title">Our Team</h2>
           <ul class="cast-scroll">
             <li class="cast-list">
-              <img
-                srcset="
-                  ./images/Team_Card_1.jpg    1x,
-                  ./images/Team_Card_1@2x.jpg 2x
-                "
-                src="./images/Team_Card_1.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width:1158px)"
+                  srcset="./images/team_card/Team_Card _1_desk-min.jpg 1x, ./images/team_card/Team_Card _1_desk-min@x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team_card/Team_Card _1_tab-min.jpg 1x,./images/team_card/Team_Card _1_tab@2x-min.jpg
+                  2x
+                  "
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/team_card/Team_Card _1_mob-min.jpg 1x,./images/team_card/Team_Card _1_mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team_card/Team_Card _1_desk-min.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="cast-info">
                 <h3 class="cast-list-subtitle">Mark Guerrero</h3>
                 <p class="cast-list-paragraph">Product Designer</p>
@@ -205,16 +224,34 @@
               </div>
             </li>
             <li class="cast-list">
-              <img
-                srcset="
-                  ./images/Team_Card_2.jpg    1x,
-                  ./images/Team_Card_2@2x.jpg 2x
-                "
-                src="./images/Team_Card_2.jpg"
-                alt="Tom_Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width:1158px)"
+                  srcset="
+                    ./images/team_card/Team_Card _2_desk-min.jpg 1x,./images/team_card/Team_Card _2_desk@2x-min.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/team_card/Team_Card _2_tab-min.jpg 1x,./images/team_card/Team_Card _2_tab@2x-min.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/team_card/Team_Card _2_mob-min.jpg 1x,./images/team_card/Team_Card _2_mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team_card/Team_Card _2_desk-min.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="cast-info">
                 <h3 class="cast-list-subtitle">Tom Ford</h3>
                 <p class="cast-list-paragraph">Frontend Developer</p>
@@ -266,16 +303,34 @@
               </div>
             </li>
             <li class="cast-list">
-              <img
-                srcset="
-                  ./images/Team_Card_3.jpg    1x,
-                  ./images/Team_Card_3@2x.jpg 2x
-                "
-                src="./images/Team_Card_3.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width:1158px)"
+                  srcset="
+                    ./images/team_card/Team_Card _3_desk-min.jpg 1x,./images/team_card/Team_Card _3_desk@2x-min.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/team_card/Team_Card _3_tab-min.jpg 1x,./images/team_card/Team_Card _3_tab@2x-min.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/team_card/Team_Card _3_mob-min.jpg 1x,./images/team_card/Team_Card _3_mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team_card/Team_Card _3_desk-min.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="cast-info">
                 <h3 class="cast-list-subtitle">Camila Garcia</h3>
                 <p class="cast-list-paragraph">Marketing</p>
@@ -327,16 +382,34 @@
               </div>
             </li>
             <li class="cast-list">
-              <img
-                srcset="
-                  ./images/Team_Card_4.jpg    1x,
-                  ./images/Team_Card_4@2x.jpg 2x
-                "
-                src="./images/Team_Card_4.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width:1158px)"
+                  srcset="
+                    ./images/team_card/Team_Card _4_desk-min.jpg 1x,./images/team_card/Team_Card _4_desk@2x-min.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/team_card/Team_Card _4_tab-min.jpg 1x,./images/team_card/Team_Card _4_tab@2x-min.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/team_card/Team_Card _4_mob-min.jpg 1x,./images/team_card/Team_Card _4_mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team_card/Team_Card _4_desk-min.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="cast-info">
                 <h3 class="cast-list-subtitle">Daniel Wilson</h3>
                 <p class="cast-list-paragraph">UI Designer</p>
@@ -792,22 +865,24 @@
         </div>
       </div>
     </footer>
-    <div class="menu-mob">
-      <div class="menu-mob-box">
-        <button type="button" class="mobmenu-close-btn">
+    <div class="menu-mob" data-menu>
+      <div class="container menu-mob-box">
+        <button type="button" class="mobmenu-close-btn" data-menu-close>
           <svg class="modal-button-close" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
-        <ul class="menu-mob-list">
-          <li>
-            <a href="./index.html" class="navigation-menu"
-              ><span class="nav-menu-title">Studio</span></a
-            >
-          </li>
-          <li><a href="" class="navigation-menu">Portfolio</a></li>
-          <li><a href="" class="navigation-menu">Contacts</a></li>
-        </ul>
+        <nav class="nav-mob-menu">
+          <ul class="menu-mob-list">
+            <li>
+              <a href="./index.html" class="navigation-menu"
+                ><span class="nav-menu-title">Studio</span></a
+              >
+            </li>
+            <li><a href="" class="navigation-menu">Portfolio</a></li>
+            <li><a href="" class="navigation-menu">Contacts</a></li>
+          </ul>
+        </nav>
         <address class="adress">
           <ul class="mob-list-adress">
             <li class="head-adress-list">
@@ -867,9 +942,9 @@
         </ul>
       </div>
     </div>
-    <div class="modal-container backdrop">
+    <div class="modal-container backdrop" data-modal>
       <div class="modal-subcontainer">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-button-close" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
@@ -952,5 +1027,7 @@
         </form>
       </div>
     </div>
+    <script src="./css/modal.js"></script>
+    <script src="./css/mobile.js"></script>
   </body>
 </html>
