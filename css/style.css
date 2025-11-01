@@ -54,7 +54,6 @@ a{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: none;
     
 }
 .menu-mob-box{
@@ -190,7 +189,7 @@ margin: auto 52px 72px 52px ;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 72px;
+    
     padding: 96px 16px;
     margin-bottom: 96px;
 }
@@ -408,10 +407,7 @@ color: #f4f4fd;
 .footer-icon{
     fill: #f4f4fd;
 }
-.form-footer-container{
 
-
-}
 .form-footer-text{
     text-align: center;
     margin-bottom: 16px;
@@ -849,4 +845,101 @@ color: #fff;
 margin: 0 auto 36px;
 width: 496px;
 }
+.white-list-scroll{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 72px;
+    
+}
+.scroll-list{
+    width: 356px;
+}
+.cast-scroll{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+}
+.cast-list{
+    
+    width: 264px;
+    
+}
+.list-title{
+    text-align: left;
+    
+}
+.icon-bckg{
+    display: none;
+}
+.portfolio-scroll{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1156px;
+    
+}
+.portfolio-list{
+    width: calc((100% - 48px) / 2);
+    height: 420px;
+}
+.footer{
+    padding: 96px 0;
+
+}
+.wraper{
+    padding-left: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 72px;
+}
+.tablet-footer{
+    display: flex;
+    gap:24px;
+    margin-bottom: 0;
+}
+.wraper-logo-footer{
+    width: 264px;
+    height: 112px;
+}
+.logo-footer{
+    text-align: left;
+}
+.footer-socials-paragraf{
+    text-align: left;
+}
+.footer-social-link{
+    width: 40px;
+    height: 40px;
+}
+.form-footer-text{
+    text-align: left;
+}
+.form-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:16px;
+}
+.menu-mob{
+    display: none;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1157px) {
+    .menu-mob{
+        display: none;
+    }
 }
