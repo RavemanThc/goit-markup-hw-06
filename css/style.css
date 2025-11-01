@@ -1042,6 +1042,7 @@ color: #434455;
 .cast-scroll{
     display:flex;
     gap: 24px;
+    flex-wrap: nowrap;
     
 }
 
