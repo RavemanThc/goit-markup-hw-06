@@ -159,7 +159,7 @@ background-position: center;
 margin: 0 auto;
 }
 @media (min-resolution: 192dpi){
-    .hero{background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-mob-min@2x.jpg);}
+    .hero{background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-mob@2x-min.jpg);}
 }
 .hero-title{
     display: block;
@@ -893,7 +893,7 @@ background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) )
     height: 436px;
 }
 @media (min-resolution: 192dpi){
-    .hero{background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-tab-min@2x.jpg);}
+    .hero{background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-tab@2x-min.jpg);}
 }
 .hero-title{
     display: block;
@@ -1035,7 +1035,9 @@ width: 496px;
 background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-desk-min.jpg);}
 
 @media (min-resolution: 192dpi){
-    .hero{background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-desk-min@2x.jpg);}
+    .hero{
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7) ), url(../images/Dark-bg-desk@2x-min.jpg);
+    }
 }
 
     .conteiner-hero{
