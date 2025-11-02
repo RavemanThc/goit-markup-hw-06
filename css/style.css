@@ -829,7 +829,7 @@ input:checked + .checkbox > .checkbox-text {
     display: flex;
 }
     .container-hero{
-        width: 100%;
+        width: 768p;
     }
     .head-icon-box{
         display: none;
@@ -1025,7 +1025,8 @@ width: 496px;
         flex-direction: row;
         gap: 12px;
     }
-
+.email-subscribe-footer{
+    width: 264px;}
 
     .hero{
         min-width: 1156px;
